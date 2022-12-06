@@ -7,6 +7,7 @@ export default {
 <template>
   <div id="Carrito">
     <navbar>
+      <!-- prueba -->
       <div>
         <img src="./images/imgKemazon.png" alt="img-logo" width="100"/>
       </div>
