@@ -1,11 +1,8 @@
-<script>
-export default {
-  name: "App",
-};
-</script>
 
 <template>
   <div id="Carrito">
+
+
     <navbar>
       <!-- prueba -->
       <div>
@@ -14,11 +11,11 @@ export default {
       <p>
         Kemazon
       </p>
-      <img src="./images/imgCarrito.png" alt="img-carrito" width="80"/>
+      <img src="./images/imgCarrito.png" alt="img-carrito" width="50"/>
     </navbar>
 
     <body>
-      <div>
+      <div id="line1">
         <div id="chaquetas">
           <img src="./images/imgChaqueta.png" alt="img-chaqueta" width="80"/>
         </div>
@@ -26,9 +23,17 @@ export default {
         <a href="boton"> Anadir a Carrito</a>
       </div>
 
-      <div>
+      <div id="line2">
         <div id="pantalones">
           <img src="./images/imgPantalones.png" alt="img-pantalones" width="80"/>
+        </div>
+        <p>Seleccione Cantidad</p>
+        <a href="boton"> Anadir a Carrito</a>
+      </div>
+
+      <div id="line3">
+        <div id="pantalones">
+          <img src="./images/imgCalcetines.png" alt="img-pantalones" width="80"/>
         </div>
         <p>Seleccione Cantidad</p>
         <a href="boton"> Anadir a Carrito</a>
@@ -37,35 +42,73 @@ export default {
     </body>
 
     <footer>
-      <div>
+      <div id="footer">
         <p>
           Formas de pago
         </p>
-        <img src="./images/imgVisa.png" alt="img-visa" width="30" />
-        <img src="./images/imgMastercard.png" alt="img-Mastercard" width="30" />
-        <img src="./images/imgPaypal.png" alt="img-paypal" width="30"/>
         
+        <div id="imgs-footer">
+          <div>
+        <img src="./images/imgVisa.png" alt="img-visa" width="30" />
+      </div>
+       <div>
+      <img src="./images/imgMastercard.png" alt="img-Mastercard" width="28" />
+    </div>
+    <div>
+      <img src="./images/imgPaypal.png" alt="img-paypal" width="30"/>
+    </div>
+    </div>
+
       </div>
    
     </footer>
   </div>
 </template>
 
+<script>
+export default {
+  name: "App",
+};
+</script>
+
+
 
 <style scoped>
+
 navbar {
   display: flex;
   justify-content: space-between;
+align-items: center;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 20px;
   background-color: aqua;
 }
 
-#chachetas {
+#line1 {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+#line2 {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
 
-display: flex;
-justify-content: space-around;
+#line3 {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
 }
 
 a {
@@ -81,13 +124,27 @@ a {
 }
 
 
-
-footer {
+#footer {
   margin-top: 30px;
-
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+align-items: center;
+
   background-color: #39b983;
 }
+
+
+#imgs-footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+
+ width: 260px;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
 
 </style>
