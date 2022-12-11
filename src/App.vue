@@ -4,14 +4,23 @@
 
 
     <navbar>
-      <!-- prueba -->
+      
       <div>
         <img src="./images/imgKemazon.png" alt="img-logo" width="100"/>
       </div>
+      <div>
       <p>
         Kemazon
       </p>
+    </div>
+      <div id="suma-carrito">
+        <p>
+    Sumatorio carrito:
+  </p>
+
       <img src="./images/imgCarrito.png" alt="img-carrito" width="50"/>
+    </div>
+
     </navbar>
 
     <body>
@@ -82,7 +91,17 @@ align-items: center;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 20px;
+  font-size: 30px;
+  font-style: oblique;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: aqua;
+}
+#suma-carrito {
+  display: flex;
+
+align-items: center;
+font-size: 15px;
+font-family: 'Courier New', Courier, monospace;
 }
 
 #line1 {
